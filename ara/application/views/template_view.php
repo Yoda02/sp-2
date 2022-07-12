@@ -1,4 +1,3 @@
-<!-- Общая разметка -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,7 +8,7 @@
 		<meta name="description" content="" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-  
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
@@ -36,7 +35,7 @@
 						<li><a href="#">О нас</a> </li>
 						<li>
 							<a href="#">
-								
+
 								Категории
 							</a>
 							<ul>
@@ -63,43 +62,44 @@
 			</div>
 		</div>
 	</header>
-	
+
 		<?php include 'application/views/'.$content_view; ?>
-			<!-- footer -->
-	<div class="footer container-fluid">
-		<div class="footer-content container">
-			<div class="row">
-				<div class="footer-section about col-md-4 col-12">
-					<h3 class="logo-text">Sports-news</h3>
-					
-					<div class="contact">
-						<span><i class="fas fa-phone"></i> &nbsp; 7(940)912-34-56</span>
-						
-					</div>
-					<div class="socials">
-						<a href="#"><i class="fab fa-facebook"></i></a>
-						<a href="#"><i class="fab fa-instagram"></i></a>
-					</div>
-				</div>
 
-			
-				<div class="footer-section contact-form col-md-4 col-12">
-					<h3>Контакты</h3>
-					<br>
-					<form action="index.php" method="post">
-						<input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
-						<textarea rows="4" name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
-						<button type="submit" class="btn btn-big contact-btn">
-							<i class="fas fa-envelope"></i>
-							Отправить
-						</button>
-					</form>
-				</div>
-
-			</div>
 
 		
-		</div>
-	</div>
+			<!-- footer -->
+			<div class="footer container-fluid">
+    <div class="footer-content container">
+        <div class="row">
+            <div class="footer-section about col-md-4 col-12">
+                <h3 class="logo-text">Sports-news</h3>
+                
+                <div class="contact">
+                    <span><i class="fas fa-phone"></i> &nbsp; 7(940)912-34-56</span>
+                    
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+           
+            <div class="footer-section contact-form col-md-4 col-12">
+                <h3>Контакты</h3>
+                <br>
+                <form action="index.html" method="post">
+                    <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
+                    <textarea rows="4" name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+                    <button type="submit" class="btn btn-big contact-btn">
+                        <i class="fas fa-envelope"></i>
+                        Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
+       
+    </div>
+</div>
 
-</body>
+
+</body> 
