@@ -1,3 +1,4 @@
+<div class="content">
 <div class="container">
     <div class="content row">
       
@@ -51,5 +52,5 @@
         <li><a href="#"></a></li>
     </ul>
 </div>
-
+</div>
 </div>

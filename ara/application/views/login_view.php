@@ -1,19 +1,28 @@
+
 <div class="container reg_form">
-    <form class="row justify-content-center" method="post" action="login.php">
+    <form class="row justify-content-center" method="post" action="">
         <h2 class="col-12">Авторизация</h2>
         <div class="mb-3 col-12 col-md-4">
-            <label for="formGroupExampleInput" class="form-label">Ваш логин</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="введите логин...">
+        <td>Логин</td>
+        <td><input type="text" name="login" placeholder="введите логин..."></td>
         </div>
         <div class="w-100"></div>
         <div class="mb-3 col-12 col-md-4">
-            <label for="exampleInputPassword1" class="form-label">Пароль</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="введите пароль...">
+        <td>Пароль</td>
+        <td><input type="password" name="password" placeholder="введите пароль..."></td>
         </div>
         <div class="w-100"></div>
         <div class="mb-3 col-12 col-md-4">
-            <button type="button" class="btn btn-secondary">Войти</button>
-            <a href="/registrat">Зарегистрироваться</a>
+        <input type="submit" class="btn btn-secondary" value="Войти" name="btn"
+	style="width: 150px; height: 30px;"></th>
+           
         </div>
     </form>
 </div>>
+
+<?php extract($data); ?>
+<?php if($login_status=="access_granted") { ?>
+<p style="color:green">Авторизация прошла успешно.</p>
+<?php } elseif($login_status=="access_denied") { ?>
+<p style="color:red">Логин и/или пароль введены неверно.</p>
+<?php } ?>
