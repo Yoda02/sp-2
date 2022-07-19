@@ -3,16 +3,9 @@
 }
 body{
     background: #f6f6f6;
-	height: 100%;
+	
 }
-.wrapper {
-	display: table;
-	height: 100%;
-}
-.content {
-	display: table-row;
-	height: 100%;
-}
+
 a{
     text-decoration: none;
     color: inherit;

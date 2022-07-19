@@ -20,7 +20,7 @@
 	<title>Sports-news</title>
 </head>
 <body>
-<div class="wrapper">
+
 	<!-- header -->
 	<header class="container-fluid">
 		<div class="container">
@@ -102,5 +102,5 @@
     </div>
 </div>
 
-</div>
+
 </body> 

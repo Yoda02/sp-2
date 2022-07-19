@@ -6,6 +6,8 @@ class Controller_Admin extends Controller
 	function action_index()
 	{
 		session_start();
+		// $model = new Model_admin();
+		// $data = $model->get_naw();
 		
 
 		if ( $_SESSION['admin'] == "12345" )

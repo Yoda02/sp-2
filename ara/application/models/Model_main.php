@@ -11,7 +11,7 @@ class Model_news extends Model_Base
    public function get_news()
    {
     $sql = 'SELECT * FROM post';
-    $config=(include 'D:\OpenServer\domains\ara\application\config\config.php')['db'];
+    $config=(include 'D:\OpenServer\domains\sp-2\ara\application\config\config.php')['db'];
     $dbh=new PDO('mysql:host='.$config['host'] . ';dbname=' . $config['dbname'], $config['user'], $config['password']);
     return $dbh->query($sql);
 
