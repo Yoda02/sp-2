@@ -1,34 +1,22 @@
 <?php
-// class Model_admin extends Model_Base
-// {
-//     protected $conn;
-//     public function __construct()
-//     {
-//         $config=(include 'D:\OpenServer\domains\sp-2\ara\application\config\config.php')['db'];
-//         $this-> $conn=new PDO('mysql:host='.$config['host'] . ';dbname=' . $config['dbname'], $config['user'], $config['password']);
-//     }
+class Model_admin extends Model_Base
+{
+protected $dbh;
    
-//    public function get_naw()
-//    {
-   
-//     $title =$_POST["title"];
-//     $content = $_POST["content"];
-//     $catigory = $_POST["catogory"];
-//     $img = $_POST["img"];
-//     $sql = "INSERT INTO 'post' ('id', 'title', 'content', 'img', 'catigory') VALUES (NULL, $title, $content, $catigory, $img)";
-    
-//    $config=(include 'D:\OpenServer\domains\sp-2\ara\application\config\config.php')['db'];
-//         $conn=new PDO('mysql:host='.$config['host'] . ';dbname=' . $config['dbname'], $config['user'], $config['password']);
-     
-//         $title =$_POST["title"];
-//         $content = $_POST["content"];
-//         $catigory = $_POST["catogory"];
-//         $img = $_POST["img"];
-//         $sql = "INSERT INTO 'post' ('id', 'title', 'content', 'img', 'catigory') VALUES (NULL, $title, $content, $catigory, $img)";
-     
-   
+   public function get_naw()
+   {
+    require_once 'D:\OpenServer\domains\ara\application\config\confa.php';
 
-//          return $conn->query($sql);
+    $title =$_POST['title'];
+       $content = $_POST['content'];
+       $catigory = $_POST['catigory'];
+       $img = $_POST['img'];
+   
+      $dbh=mysqli_query($connect,"INSERT INTO `post` (`id`, `title`, `content`, `catigory`, `img`) VALUES (NULL, '$title', '$content', '$catigory', '$img')");
+   
+       
 
-//    }
-// }
+         return $dbh;
+      
+   }
+}
